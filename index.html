@@ -8,7 +8,7 @@
   <title>Bit by Bit</title>
   <meta name="description" content="">
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui" />
 
   <link rel="stylesheet" href="main.css" />
 
@@ -19,49 +19,61 @@
 
 <header>
 <div id="sponsors">
-<img src="images/ml.png" alt="media lab" id="ml_logo" />
-<img src="images/rwjf.png" alt="rwjf" id="rwjf_logo" />
+<img src="images/ml.png" alt="media lab" id="ml_logo" height="50" />
+<img src="images/rwjf.png" alt="rwjf" id="rwjf_logo" height="60" />
 </div>
-<h1 id="title_container">
-<img src="images/logo.png" alt="bitxbit" />
-<span>Bit by Bit</span>
-</h1>
+<div id="subheader">
+<div id="title_container">
+  <img src="images/logo.png" alt="bitxbit" width="120" />
+</div>
+<div id="intro">
+<h1><span>BIT x BIT</span></h1>
+<p>is a platform for other Media Lab creatives to pursue a solution to your resolution. and more text explaining what it is and stuff like that.</p>
+</div>
+</div>
 </header>
 
 <section id="main">
 
   <div id="examples">
-    <img src="images/users/1.png" alt="" /> 
-    is creating something for 
-    <img src="images/users/2.png" alt="" />
-    to eat more regularly.
+    <div class="example">
+      <img src="images/users/1.png" alt="" /> 
+      is creating something for 
+      <img src="images/users/2.png" alt="" />
+      to eat more regularly.
+    </div>
 
-    <img src="images/users/2.png" alt="" /> 
-    is creating something for 
-    <img src="images/users/1.png" alt="" />
-    to eat more regularly.
+    <div class="example">
+      <img src="images/users/2.png" alt="" /> 
+      is creating something for 
+      <img src="images/users/1.png" alt="" />
+      to eat more regularly.
+    </div>
 
-    <img src="images/users/ml.png" alt="" /> 
-    is creating something for 
-    <img src="images/users/ml.png" alt="" />
+    <div class="example">
+      <img src="images/users/ml.png" alt="" /> 
+      is creating something for 
+      <img src="images/users/ml.png" alt="" />
+    </div>
   </div>
 
-  <h2>Bit by Bit</h2>
-
   <div id="desc">
-    <p>is a platform for other Media Lab creatives to pursue a solution to your resolution. and more text explaining what it is and stuff like that.</p>
     <p>submit your suggestion to your match and wait for an email describing their solution to your resolution.</p>
   </div>
 
   <div id="form">
     <form action="" method="POST">
+      <p>
       <label for="name_field">Name:</label>
       <input type="text" id="name_field" name="name_field" />
+    </p>
 
+<p>
       <label for="resolution_field">Resolution:</label>
-      <textarea id="resolution_field" name="resolution_field">e.g. be more productive.</textarea>
+      <input type="text" id="resolution_field" name="resolution_field" placeholder="e.g. be more productive." />
+    </p>
     
-      <input type="submit" name="submit" value="submit" />
+      <input type="submit" name="submit" value="submit" id="submit" />
     </form>
   </div>
 
