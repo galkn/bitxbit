@@ -36,26 +36,85 @@
 <section id="main">
 
   <div id="examples">
-    <div class="example">
-      <img src="images/users/1.png" alt="" /> 
-      is creating something for 
-      <img src="images/users/2.png" alt="" />
-      to eat more regularly.
+    <div id="sets">
+    <div class="set">
+      <div class="example">
+        <img src="images/users/5.png" alt="" /> 
+        is creating something for 
+        <img src="images/users/6.png" alt="" />
+        to drink more water.
+      </div>
+
+      <div class="example">
+        <img src="images/users/6.png" alt="" /> 
+        is creating something for 
+        <img src="images/users/5.png" alt="" />
+        to practice more yoga.
+      </div>
     </div>
 
-    <div class="example">
-      <img src="images/users/2.png" alt="" /> 
-      is creating something for 
-      <img src="images/users/1.png" alt="" />
-      to eat more regularly.
+    <div class="set">
+      <div class="example">
+        <img src="images/users/3.png" alt="" /> 
+        is creating something for 
+        <img src="images/users/4.png" alt="" />
+        to fix his sleep schedule.
+      </div>
+
+      <div class="example">
+        <img src="images/users/4.png" alt="" /> 
+        is creating something for 
+        <img src="images/users/3.png" alt="" />
+         to be more diligent in PT.
+      </div>
     </div>
 
-    <div class="example">
+    <div class="set visible">
+      <div class="example">
+        <img src="images/users/1.png" alt="" /> 
+        is creating something for 
+        <img src="images/users/2.png" alt="" />
+        to eat more regularly.
+      </div>
+
+      <div class="example">
+        <img src="images/users/2.png" alt="" /> 
+        is creating something for 
+        <img src="images/users/1.png" alt="" />
+        to be more focused at work.
+      </div>
+    </div>
+
+    <div class="example" style="padding-top: 100px;">
       <img src="images/users/ml.png" alt="" /> 
       is creating something for 
       <img src="images/users/ml.png" alt="" />
     </div>
   </div>
+  </div>
+
+  <script type="text/javascript">
+
+  $(function() {
+    //$("#sets .set");
+
+    var counter = 0;
+
+    function switch_examples() {
+      $("#sets .set.visible").animate({left: "-120%"}, function() {
+        $(this).css({left: "120%"});
+        $(this).removeClass("visible");
+      });
+      $("#sets .set").eq(counter % 3).animate({left: "0%"}, function() {
+        $(this).addClass("visible");
+      });
+      counter += 1;
+    }
+
+    setInterval(switch_examples, 5000);
+  });
+
+  </script>
 
   <div id="desc">
     <p>submit your suggestion to your match and wait for an email describing their solution to your resolution.</p>

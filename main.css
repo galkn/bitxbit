@@ -43,6 +43,10 @@ body, input {
 	background: #f1f1f2;
 }
 
+body, #examples, #sets {
+	overflow-x: hidden;
+}
+
 a {
 	text-decoration: none;
 }
@@ -122,17 +126,18 @@ p {
 }
 
 #examples {
-	font-size: 8pt;
-	padding: 20px 5px;
+	font-size: 7.5pt;
+	padding: 40px 5px 20px;
 }
 
 #examples img {
-	width: 35px;
+	width: 30px;
 	vertical-align: middle;
+	margin: 0 2px;
 }
 
 .example {
-	margin: 20px 0;
+	margin: 0 0 20px 0;
 }
 
 #desc {
@@ -203,4 +208,22 @@ vertical-align: middle;
 
 :-ms-input-placeholder {  
    font-style: italic;
+}
+
+#sets {
+	position: relative;
+}
+
+.set.visible {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+.set {
+	left: 120%;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
