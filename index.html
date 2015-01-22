@@ -11,6 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui" />
 
   <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="mobile.css" media="only screen and (min-device-width: 320px) and (max-device-width: 480px)">
+
+  <link rel="stylesheet" href="desktop.css" media="only screen and (min-device-width: 800px)">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
@@ -19,11 +22,12 @@
 
 <header>
 <div id="sponsors">
+  <img src="images/logo.png" alt="bitxbit" width="110" class="logo_desktop" />
+  <img src="images/rwjf.png" alt="rwjf" id="rwjf_logo" height="60" />
 <img src="images/ml.png" alt="media lab" id="ml_logo" height="50" />
-<img src="images/rwjf.png" alt="rwjf" id="rwjf_logo" height="60" />
 </div>
 <div id="subheader">
-<div id="title_container">
+<div id="title_container" class="logo_mobile" >
   <img src="images/logo.png" alt="bitxbit" width="120" />
 </div>
 <div id="intro">
@@ -33,7 +37,6 @@
 </div>
 </header>
 
-<section id="main">
 
   <div id="examples">
     <div id="sets">
@@ -85,7 +88,7 @@
       </div>
     </div>
 
-    <div class="example" style="padding-top: 100px;">
+    <div class="example" id="media_lab_example">
       <img src="images/users/ml.png" alt="" /> 
       is creating something for 
       <img src="images/users/ml.png" alt="" />
@@ -117,7 +120,7 @@
   </script>
 
   <div id="desc">
-    <p>submit your suggestion to your match and wait for an email describing their solution to your resolution.</p>
+    <p>submit your suggestion to your match and wait for an email describing their solution to your resolution. bit by bit is a platform for other Media Lab creatives to pursue a solution to your resolution. and more text explaining what it is and stuff like that.</p>
   </div>
 
   <div id="form">
@@ -135,6 +138,47 @@
       <input type="submit" name="submit" value="submit" id="submit" />
     </form>
   </div>
+
+<section id="faq">
+<h3>FAQ</h3>
+
+<div id="faq_sets">
+<div class="faq_set">
+
+<p class="q">What is this?</p>
+<p class="answer">BitByBit is an attempt to make a community better by using a randomly assigned person to solve your well-being problems.</p>
+
+<p class="q">How long is the program?</p>
+<p class="answer">You will have the Spring 2015 semester to solve your partner’s problem</p>
+
+<p class="q">Can I pick my partner?</p>
+<p class="answer">No your partner will be randomly assigned</p>
+
+<p class="q">When will I find out who my partner is?</p>
+<p class="answer">At the opening event on February 6th.</p>
+
+<p class="q">Why should I do this?</p>
+<p class="answer">Because your a problem solver, so solve a problem that matters</p>
+
+</div>
+<div class="faq_set">
+
+<p class="q">What happens to the solutions?</p>
+<p class="answer">All solutions will be posted on our website to impact more people. No identities will be used with the solutions.</p>
+
+<p class="q">Who is participating?</p>
+<p class="answer">The entire Media Lab community.</p>
+
+<p class="q">My partner is doing a horrible job, what can I do?</p>
+<p class="answer">Communicate this with your partner. It is their job to find a solution that works for you.</p>
+
+<p class="q">Who decides if a solution works?</p>
+<p class="answer">Your partner. You are designing for them and them alone. Once a solution is found we will publish it on our website so others with a similar issue can try your solution.</p>
+
+<p class="q">Will there be events?</p>
+<p class="answer">Yes the first event will be February 6th. Lunch will be provided.</p>
+
+</div></div>
 
 </section>
 

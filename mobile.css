@@ -1,0 +1,21 @@
+.logo_desktop {
+	display: none;
+}
+
+.set.visible {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+.set {
+	left: 120%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#media_lab_example {
+	padding-top: 100px;
+}

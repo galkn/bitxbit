@@ -1,0 +1,78 @@
+#ml_logo {
+	float: right;
+}
+
+.logo_mobile {
+	display: none;
+}
+
+#intro {
+	margin-top:200px;
+}
+
+#subheader {
+	padding: 20px;
+}
+
+#examples {
+	background: #fff;
+	width: 500px;
+	float: right;
+	position: relative;
+	top: -200px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+#examples {
+	font-size: 10pt;
+}
+
+#examples img {
+	margin: 0 4px;
+	width: 50px;
+}
+
+#examples .set {
+	margin-bottom: 40px;
+}
+
+#media_lab_example {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#desc {
+	padding: 30px 20px;
+	background: transparent;
+}
+
+form {
+	font-size: 120%;
+}
+
+#name_field {
+	width: 368px;
+}
+
+#resolution_field {
+	width: 320px;
+}
+
+input[type=text] {
+	font-size: 14pt;
+}
+
+form p {
+}
+
+label {
+}
+
+input {
+}
+
+#faq {
+	position: relative;
+	top: -150px;
+}

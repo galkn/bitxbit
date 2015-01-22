@@ -32,6 +32,22 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-style: italic;
+}
+
+:-ms-input-placeholder {  
+   font-style: italic;
+}
+
 img {
 	-ms-interpolation-mode: bicubic;
 }
@@ -45,6 +61,8 @@ body, input {
 
 body, #examples, #sets {
 	overflow-x: hidden;
+	max-width: 1024px;
+	margin: 0px auto;
 }
 
 a {
@@ -82,10 +100,13 @@ header {
 }
 
 #ml_logo {
-
+	vertical-align: middle;
+	margin-right: 20px;
+	margin-top: 5px;
 }
 
 #rwjf_logo {
+	vertical-align: middle;
 	float: right;
 }
 
@@ -112,17 +133,21 @@ p {
 	overflow: auto;
 	padding: 10px;
 	background: url(images/gradient.png) no-repeat top left;
-	background-size: 100% 100%;
+	background-size: 110% 110%;
+background-position: -10px -10px;
 }
 
 #intro {
 	overflow: auto;
+	max-width: 440px;
 	margin-top: 40px;
+	padding-bottom: 10px;
 }
 
 #sponsors {
 	vertical-align: middle;
 	padding: 10px;
+	overflow: auto
 }
 
 #examples {
@@ -143,6 +168,8 @@ p {
 #desc {
 	background: #fff;
 	padding: 30px 10px;
+	max-width: 440px;
+	font-size: 10pt;
 }
 
 form {
@@ -194,36 +221,43 @@ vertical-align: middle;
 	margin: 0px auto;
 }
 
-::-webkit-input-placeholder {
-   font-style: italic;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-  font-style: italic;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   font-style: italic;
-}
-
-:-ms-input-placeholder {  
-   font-style: italic;
-}
-
 #sets {
 	position: relative;
 }
 
-.set.visible {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
+#faq {
+	padding: 10px;
+	clear:both;
 }
 
-.set {
-	left: 120%;
-	position: absolute;
-	top: 0;
-	width: 100%;
+#faq_sets {
+	overflow: auto;
+}
+
+#faq h3 {
+	margin-bottom: 40px;
+	margin-top:20px;
+	font-weight: 700;
+}
+
+.q, .answer {
+	font-size: 11pt;
+}
+
+.answer {
+	margin-bottom: 20px;
+}
+
+.q {
+	font-weight: 600;
+}
+
+.faq_set {
+	margin-right: 40px;
+	float: left;
+	max-width: 480px;
+}
+
+.faq_set:last-child {
+	margin: 0;
 }
