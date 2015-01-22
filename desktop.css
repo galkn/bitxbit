@@ -63,13 +63,8 @@ input[type=text] {
 	font-size: 14pt;
 }
 
-form p {
-}
-
-label {
-}
-
-input {
+#examples img {
+	margin: 0px 5px;
 }
 
 #faq {
