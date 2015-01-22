@@ -19,3 +19,11 @@
 #media_lab_example {
 	padding-top: 100px;
 }
+
+#name_field {
+	width: 210px;
+}
+
+#resolution_field {
+	width: 170px;
+}
