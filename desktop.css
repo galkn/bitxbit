@@ -6,6 +6,10 @@
 	display: none;
 }
 
+.logo_desktop {
+	margin-left: 10px;
+}
+
 #intro {
 	margin-top:200px;
 }
