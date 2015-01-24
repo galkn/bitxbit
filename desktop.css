@@ -7,71 +7,85 @@
 }
 
 .logo_desktop {
-	margin-left: 10px;
+	margin-left: 0px;
 }
 
 #intro {
-	margin-top:200px;
+	margin-top:20px;
 }
 
 #subheader {
+
 	padding: 20px;
+	/*padding-left: 50px;*/
 }
 
-#examples {
-	background: #fff;
-	width: 500px;
-	float: right;
-	position: relative;
-	top: -200px;
+#subheader .wrapper{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+#sponsors{
+	max-width: 1024px;
+	margin: 0 auto;
 	padding-left: 20px;
-	padding-top: 20px;
-}
-
-#examples {
-	font-size: 10pt;
-}
-
-#examples img {
-	margin: 0 4px;
-	width: 50px;
-}
-
-#examples .set {
-	margin-bottom: 40px;
-}
-
-#media_lab_example {
-	margin-bottom: 0;
-	padding-bottom: 0;
+	padding-right: 20px;
 }
 
 #desc {
+	max-width: 800px;
+	margin: 0 auto;
 	padding: 30px 20px;
 	background: transparent;
 }
 
-form {
-	font-size: 120%;
+#desc p{
+	font-size: 13pt;
+	padding-bottom: 10px;
 }
 
-#name_field {
-	width: 368px;
+h2{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 10px;
 }
 
-#resolution_field {
-	width: 320px;
+#sets{
+	max-width: 700px;
+	background-color: white;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.set.visible {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
 }
 
-input[type=text] {
-	font-size: 14pt;
+.set {
+	left: 120%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 10px;
+}
+
+#examples {
+	font-size: 15pt;
+	padding: 40px 5px 20px;
+	padding: 10px 0px 10px;
+	background-color: black;
 }
 
 #examples img {
-	margin: 0px 5px;
+	width: 80px;
+	vertical-align: middle;
+	margin: 0 2px;
 }
 
-#faq {
-	position: relative;
-	top: -150px;
+#media_lab_example {
+	padding: 10px;
+	padding-top: 200px;
+
 }

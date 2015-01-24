@@ -61,7 +61,7 @@ body, input {
 
 body, #examples, #sets {
 	overflow-x: hidden;
-	max-width: 1024px;
+	
 	margin: 0px auto;
 }
 
@@ -114,12 +114,17 @@ h1 {
 	font-weight: 700;
 	letter-spacing: -1px;
 	color: #fff;
-	font-size: 18pt;
+	font-size: 30pt;
 	display: inline;
+}
+
+h4{
+	color: #fff;
 }
 
 p {
 	line-height: 1.2;
+	text-align: left;
 }
 
 #subheader p {
@@ -142,6 +147,15 @@ background-position: -10px -10px;
 	max-width: 440px;
 	margin-top: 40px;
 	padding-bottom: 10px;
+}
+
+.save-date{
+	margin-top: 20px;
+}
+
+.save-date h4{
+	font-size: 20pt;
+
 }
 
 #sponsors {
@@ -172,13 +186,13 @@ background-position: -10px -10px;
 	font-size: 10pt;
 }
 
-form {
+/*form {
 	padding: 40px 10px;
 }
 
 form p {
 	margin-bottom: 30px;
-}
+}*/
 
 label {
 	font-weight: 600;
@@ -228,6 +242,8 @@ vertical-align: middle;
 #faq {
 	padding: 10px;
 	clear:both;
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 #faq_sets {
@@ -260,4 +276,25 @@ vertical-align: middle;
 
 .faq_set:last-child {
 	margin: 0;
+}
+
+.gradient {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #15af95), color-stop(1, #b45ea4) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #15af95), color-stop(1, #b45ea4) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+footer{
+	border-top: 1px solid rgba(0,0,0,0.1);
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	background-color: #f6f6f6;
+}
+
+footer a{
+	color: #707070;
+	text-decoration: none;
 }
