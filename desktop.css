@@ -33,7 +33,7 @@
 }
 
 #desc {
-	max-width: 800px;
+	max-width: 1024px;
 	margin: 0 auto;
 	padding: 30px 20px;
 	background: transparent;
@@ -45,7 +45,7 @@
 }
 
 h2{
-	text-align: center;
+	text-align: left;
 	font-size: 30px;
 	font-weight: 700;
 	margin-bottom: 10px;
