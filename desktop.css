@@ -42,6 +42,7 @@
 #desc p{
 	font-size: 13pt;
 	padding-bottom: 10px;
+	width: 661px;
 }
 
 h2{
@@ -51,11 +52,19 @@ h2{
 	margin-bottom: 10px;
 }
 
+.sets-wrapper{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
 #sets{
 	max-width: 700px;
 	background-color: white;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin: 0;
 }
+
+
 .set.visible {
 	position: absolute;
 	top: 0;
