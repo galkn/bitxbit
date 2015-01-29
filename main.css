@@ -259,6 +259,7 @@ vertical-align: middle;
 .answer span{
 	list-style-type: decimal;
 	font-weight: 700;
+	font-style: italic;
 }
 
 .q, .answer {
