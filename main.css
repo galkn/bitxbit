@@ -256,6 +256,11 @@ vertical-align: middle;
 	font-weight: 700;
 }
 
+.answer span{
+	list-style-type: decimal;
+	font-weight: 700;
+}
+
 .q, .answer {
 	font-size: 11pt;
 }
